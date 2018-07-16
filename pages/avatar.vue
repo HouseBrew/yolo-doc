@@ -17,24 +17,20 @@
             { title: 'Advanced usage', file: 'avatar/border', desc: `Combining an avatar with other components allows you to build beautiful user interfaces right out of the box.` },
             { title: 'Icon and text', file: 'avatar/border', desc: 'An avatar also accepts the <code>v-icon</code> component or text. Mix and match functionality to create something unique.'}
           ],
-          props: {
-            'v-avatar': {
-              params: [
-                [
-                  'size',
-                  'String',
-                  '48px',
-                  'Controls the height and width of a child <code>img</code> or <code>v-icon</code>'
-                ],
-                [
-                  'tile',
-                  'Boolean',
-                  'False',
-                  'Removes the border radius from the avatar'
-                ]
-              ]
-            }
-          },
+          props: [
+            [
+              'size',
+              'String',
+              '48px',
+              'Controls the height and width of a child <code>img</code> or <code>v-icon</code>'
+            ],
+            [
+              'tile',
+              'Boolean',
+              'False',
+              'Removes the border radius from the avatar'
+            ]
+          ],
           slots: {
             'v-avatar': {
               shared: ['default']

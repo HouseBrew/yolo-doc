@@ -2,6 +2,11 @@
   <div>
     <h1>{{doc.title}}</h1>
     <p v-html="doc.desc"></p>
+    <table>
+      <tr v-for="prop in doc.props">
+        <td v-for="i in prop" v-html="i"></td>
+      </tr>
+    </table>
     <component-ex
       v-if="doc.examples"
       v-for="ex in doc.examples"
