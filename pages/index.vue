@@ -6,8 +6,10 @@
         yolo-doc
       </h1>
       <h2 class="subtitle">
-        Documentation for Yolo UI Library ssdfs
+        Documentation for Yolo UI Library
       </h2>
+      <vi-avatar src="https://api.adorable.io/avatars/285/me"/>
+      <vi-icon name="trash"/>
       <div class="links">
         <a
           href="https://nuxtjs.org/"

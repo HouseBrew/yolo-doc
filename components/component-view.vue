@@ -9,7 +9,8 @@
     </table>
     <component-ex
       v-if="doc.examples"
-      v-for="ex in doc.examples"
+      v-for="(ex, i) in doc.examples"
+      :key="i"
       :ex="ex">
     </component-ex>
   </div>

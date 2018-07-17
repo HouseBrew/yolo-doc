@@ -32,8 +32,12 @@ module.exports = {
           exclude: /(node_modules)/
         })
       }
+    },
+
+    build: {
+      vendor: ['yolo']
     }
   },
 
-  plugins: ['~/plugins/doc-component']
+  plugins: ['~/plugins/doc-component', '~/plugins/yolo-lib']
 }
