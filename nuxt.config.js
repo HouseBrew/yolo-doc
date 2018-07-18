@@ -1,5 +1,11 @@
 const nodeExternals = require('webpack-node-externals')
 
+const routerBase = process.env.DEPLOY_ENV === 'GH_PAGES' ? {
+  router: {
+    base: '/housebrew/'
+  }
+} : {}
+
 module.exports = {
   /*
   ** Headers of the page
@@ -47,5 +53,7 @@ module.exports = {
     }
   },
 
-  plugins: ['~/plugins/doc-component', '~/plugins/yolo-lib']
+  plugins: ['~/plugins/doc-component', '~/plugins/yolo-lib'],
+
+  ...routerBase
 }
