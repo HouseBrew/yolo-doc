@@ -2,7 +2,7 @@ const nodeExternals = require('webpack-node-externals')
 
 const routerBase = process.env.DEPLOY_ENV === 'GH_PAGES' ? {
   router: {
-    base: '/housebrew/'
+    base: '/housebrew.github.io/'
   }
 } : {}
 
