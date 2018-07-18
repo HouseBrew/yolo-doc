@@ -84,7 +84,7 @@
     padding 20px
     max-height 300px
     overflow-y scroll
-    display none
+    // display none
 
   .vi-tabs__item
     width 150px
