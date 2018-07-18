@@ -1,3 +1,5 @@
+const nodeExternals = require('webpack-node-externals')
+
 module.exports = {
   /*
   ** Headers of the page
@@ -24,7 +26,7 @@ module.exports = {
     /*
     ** Run ESLint on save
     */
-    extend (config, { isDev, isClient }) {
+    extend (config, { isDev, isClient, isServer }) {
       if (isDev && isClient) {
         config.module.rules.push({
           enforce: 'pre',
@@ -32,10 +34,16 @@ module.exports = {
           exclude: /(node_modules)/
         })
       }
-    },
 
-    build: {
-      vendor: ['yolo']
+      // allow ES6 to be compiled inside node_module (Yolo)
+      // https://github.com/nuxt/nuxt.js/issues/1753
+      if (isServer) {
+        config.externals = [
+          nodeExternals({
+            whitelist: [/\.(?!(?:js|json)$).{1,5}$/i, /^Yolo/]
+          })
+        ]
+      }
     }
   },
 

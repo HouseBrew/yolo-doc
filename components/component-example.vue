@@ -80,7 +80,11 @@
     border-bottom 1px solid #e1e1e1
 
   .vi-tabs__panels
+    font-size 12px
     padding 20px
+    max-height 300px
+    overflow-y scroll
+    display none
 
   .vi-tabs__item
     width 150px
