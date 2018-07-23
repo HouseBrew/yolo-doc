@@ -30,93 +30,31 @@
       <nuxt-link tag="li" to="/preview"><vi-item selectable>Preview</vi-item></nuxt-link>
       <nuxt-link tag="li" to="/loading-dots"><vi-item selectable>Loading Dots</vi-item></nuxt-link>
     </div>
-    <main>
+    <main style="margin-top: 60px">
       <nuxt/>
     </main>
 
   </div>
 </template>
 
+
 <style lang="stylus">
-  // TODO: rm me
-  @import url('https://fonts.googleapis.com/css?family=Lato:300,400,700');
-
-  html {
-    box-sizing: border-box;
-    overflow-y: scroll; /* All browsers without overlaying scrollbars */
-    -webkit-text-size-adjust: 100%; /* iOS 8+ */
-  }
-
-  *,
-  ::before,
-  ::after {
-    box-sizing: inherit;
-  }
-
-  ::before,
-  ::after {
-    text-decoration: inherit; /* Inherit text-decoration and vertical align to ::before and ::after pseudo elements */
-    vertical-align: inherit;
-  }
-
-  /* Remove margin, padding of all elements and set background-no-repeat as default */
-  * {
-    background-repeat: no-repeat; /* Set `background-repeat: no-repeat` to all elements */
-    padding: 0; /* Reset `padding` and `margin` of all elements */
-    margin: 0;
-  }
-
-  html, body
-    height: 100%
-    min-height: 100%
-    position: relative
-    width: 100%
-    font-family Lato, sans-serif
-    background #eaeaea
-
-  html
-    font-size: $font-size-root
-    text-rendering: optimizeLegibility
-    -webkit-font-smoothing: antialiased
-    -moz-osx-font-smoothing: grayscale
-    -webkit-tap-highlight-color: rgba(0, 0, 0, 0)
-    overflow-x: hidden
-
+  @import '../assets/stylus/main.styl'
   body
-    font-family: $font-family
-    line-height: $line-height-root
-    margin 0
+    background $bg-color
 
-  header
-    transition: .3s padding $transition
-    width: 100%
-    z-index: 1
-
-  main
-    transition: .3s padding $transition
-    will-change: padding-left
-
-  a
-    color: inherit
-    text-decoration: none
-
-  ol, ul, li
-    list-style: none
-
-  img
-    max-width: 100%
-
-  ::-ms-clear
-  ::-ms-reveal
-    display: none
-
-</style>
-
-<style lang="stylus">
   .topbar
-    background #414141
+    background #f1bc1a
     height 50px
     color white
+    align-items center
+    display flex
+    padding 0 20px
+    font-weight bold
+    position fixed
+    left 0
+    top 0
+    right 0
 
   .sidebar
     position: fixed;
@@ -124,7 +62,8 @@
     top: 50px;
     bottom: 0;
     width: 200px;
-    border-right: 1px solid #e1e1e1;
+    border-right: 1px solid #e1e1e1
+    background white
 
   main
     top: 50px;

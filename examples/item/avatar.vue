@@ -1,39 +1,40 @@
 <template>
   <div>
     <div class="box">
-      <vi-item avatar>
-        <vi-item-avatar>
-          <vi-avatar>J</vi-avatar>
+      <vi-item height="60">
+        <vi-item-avatar class="pr-8">
+          <vi-avatar size="36" src="https://api.adorable.io/avatars/285/me"/>
         </vi-item-avatar>
         <vi-item-content>
           <div class="vi-item__title">Joyce</div>
           <div class="vi-item__sub-title">Kay2097</div>
         </vi-item-content>
+        <vi-item-action>
+          <vi-checkbox v-model="selected" option-value="1"/>
+        </vi-item-action>
       </vi-item>
-      <vi-item avatar>
-        <vi-item-avatar>
-          <vi-avatar>K</vi-avatar>
+      <vi-item height="60">
+        <vi-item-avatar class="pr-8">
+          <vi-avatar size="36" src="https://api.adorable.io/avatars/285/me"/>
         </vi-item-avatar>
         <vi-item-content>
-          <div class="vi-item__title">Kay Wong</div>
+          <div class="vi-item__title">Ken Chan</div>
           <div class="vi-item__sub-title">Kay2097</div>
         </vi-item-content>
-      </vi-item>
-    </div>
-
-    <div class="box">
-      <vi-item menu-link>
-        <vi-item-avatar>
-          <vi-icon width="25" height="25" name="config"/>
-        </vi-item-avatar>
-        Setting
-      </vi-item>
-      <vi-item menu-link>
-        <vi-item-avatar>
-          <vi-icon width="25" height="25" name="logout"/>
-        </vi-item-avatar>
-        Logout
+        <vi-item-action>
+          <vi-checkbox v-model="selected" option-value="2"/>
+        </vi-item-action>
       </vi-item>
     </div>
   </div>
 </template>
+
+<script>
+  export default {
+    data () {
+      return {
+        selected: []
+      }
+    }
+  }
+</script>

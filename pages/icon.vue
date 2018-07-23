@@ -14,8 +14,7 @@
           desc: '<p>It could be an image or an icon</p>',
           examples: [
             { title: 'Standard display', file: 'icon/size', desc: `The avatar has a dynamic size that can be scaled for any situation. A <strong>tile</strong> variation is available for displaying an avatar without border radius.` },
-            { title: 'Advanced usage', file: 'avatar/border', desc: `Combining an avatar with other components allows you to build beautiful user interfaces right out of the box.` },
-            { title: 'Icon and text', file: 'avatar/border', desc: 'An avatar also accepts the <code>v-icon</code> component or text. Mix and match functionality to create something unique.'}
+            { title: 'Advanced usage', file: 'icon/collection', desc: `Combining an avatar with other components allows you to build beautiful user interfaces right out of the box.` },
           ],
           props: [
             [

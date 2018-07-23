@@ -13,3 +13,8 @@
     </vi-chip>
   </div>
 </template>
+
+<style scoped lang="stylus">
+  .vi-chip
+    margin-right 16px
+</style>

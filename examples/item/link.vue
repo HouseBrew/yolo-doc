@@ -1,28 +1,71 @@
 <template>
   <div>
-    <p>used in generic selection box</p>
-    <div class="box">
-      <vi-item :link="true">1987</vi-item>
-      <vi-item :link="true">1988</vi-item>
-      <vi-item :link="true">1989</vi-item>
-      <vi-item :link="true">1990</vi-item>
-    </div>
+    <vi-row>
+      <vi-col xs4>
+        <vi-card>
+          <vi-item :link="true">1987</vi-item>
+          <vi-item :link="true">1987</vi-item>
+          <vi-item :link="true">1987</vi-item>
+        </vi-card>
+      </vi-col>
 
-    <h3>Selectable - hover with brand color without background</h3>
-    <p>used in nav menu</p>
-    <div class="box">
-      <vi-item link="menu">1987</vi-item>
-      <vi-item link="menu">1988</vi-item>
-      <vi-item link="menu">1989</vi-item>
-      <vi-item link="menu">1990</vi-item>
-    </div>
+      <vi-col xs4>
+        <vi-card>
+          <vi-item :link="true" class="pr-4">
+            <vi-item-content>Item A</vi-item-content>
+            <vi-item-action>
+              <vi-button icon text>
+                <vi-icon size="18" name="info-circular"/>
+              </vi-button>
+            </vi-item-action>
+          </vi-item>
+          <vi-item :link="true" class="pr-4">
+            <vi-item-content>Item B</vi-item-content>
+            <vi-item-action>
+              <vi-button icon text>
+                <vi-icon size="18" name="info-circular"/>
+              </vi-button>
+            </vi-item-action>
+          </vi-item>
+          <vi-item :link="true" class="pr-4">
+            <vi-item-content>Item C</vi-item-content>
+            <vi-item-action>
+              <vi-button icon text>
+                <vi-icon size="18" name="info-circular"/>
+              </vi-button>
+            </vi-item-action>
+          </vi-item>
+        </vi-card>
+      </vi-col>
 
-    <h3>Link - hover with shadow</h3>
-    <div class="box">
-      <vi-item link="float">1987</vi-item>
-      <vi-item link="float">1988</vi-item>
-      <vi-item link="float">1989</vi-item>
-      <vi-item link="float">1990</vi-item>
-    </div>
+      <vi-col xs4>
+        <vi-card>
+          <vi-item :link="true">
+            <vi-item-avatar>
+              <vi-icon name="edit"/>
+            </vi-item-avatar>
+            <vi-item-content>
+              Edit item
+            </vi-item-content>
+          </vi-item>
+          <vi-item :link="true">
+            <vi-item-avatar>
+              <vi-icon name="copy"/>
+            </vi-item-avatar>
+            <vi-item-content>
+              Duplicage item
+            </vi-item-content>
+          </vi-item>
+          <vi-item :link="true">
+            <vi-item-avatar>
+              <vi-icon name="trash"/>
+            </vi-item-avatar>
+            <vi-item-content>
+              Delete item
+            </vi-item-content>
+          </vi-item>
+        </vi-card>
+      </vi-col>
+    </vi-row>
   </div>
 </template>
