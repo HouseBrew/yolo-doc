@@ -13,21 +13,53 @@
           title: 'Icon',
           desc: '<p>It could be an image or an icon</p>',
           examples: [
-            { title: 'Standard display', file: 'icon/size', desc: `The avatar has a dynamic size that can be scaled for any situation. A <strong>tile</strong> variation is available for displaying an avatar without border radius.` },
-            { title: 'Advanced usage', file: 'icon/collection', desc: `Combining an avatar with other components allows you to build beautiful user interfaces right out of the box.` },
+            { title: 'Size', file: 'icon/size', desc: 'Specify icon size - this will add a inline width and height style to the icon svg' },
+            { title: 'Color', file: 'icon/color', desc: 'Specific color of the icon' },
+            { title: 'Transform', file: 'icon/transform', desc: 'Flip or rotate the icon' },
+            { title: 'Collection', file: 'icon/collection', desc: `The default collection of icons - You could import your own` },
           ],
           props: [
             [
-              'size',
+              'name',
+              'Name of icon - check the collection section',
               'String',
-              '48px',
-              'Controls the height and width of a child <code>img</code> or <code>v-icon</code>'
+              '-'
             ],
             [
-              'tile',
-              'Boolean',
-              'False',
-              'Removes the border radius from the avatar'
+              'size',
+              'Specify icon size - this will add a inline width and height style to the icon svg',
+              'String | Number',
+              '22'
+            ],
+            [
+              'color',
+              'Color of icon',
+              'String',
+              '-'
+            ],
+            [
+              'flip-y',
+              'Flip along the Y-axis',
+              'boolean',
+              'false'
+            ],
+            [
+              'flip-x',
+              'Flip along the X-axis',
+              'boolean',
+              'false'
+            ],
+            [
+              'rotate90',
+              'Rotate 90 deg',
+              'boolean',
+              'false'
+            ],
+            [
+              'rotate180',
+              'Rotate 180 deg',
+              'boolean',
+              'false'
             ]
           ],
           slots: {
