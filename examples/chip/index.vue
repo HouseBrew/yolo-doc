@@ -1,17 +1,16 @@
 <template>
-  <div>
-    <p>Default</p>
-    <vi-chip>
-      Verified
-    </vi-chip>
+  <div class="ex-row">
 
-    <p>Prepend</p>
-    <vi-chip prepend="Taxonomy">
-      2 Selected
-    </vi-chip>
+    <vi-chip>Verified</vi-chip>
 
-    <vi-chip small color="brand">
-      <vi-icon name="clear" color="brand" size="10"/> Removed
-    </vi-chip>
+    <vi-chip><vi-icon name="done" color="green" size="12"/>Verified</vi-chip>
+
+    <vi-chip outline>Removed<vi-icon right name="question-circular" size="16"/></vi-chip>
+
+    <vi-chip><vi-avatar src="http://api.adorable.io/avatars/285/me"/>Jason Ma</vi-chip>
+
+    <vi-chip color="blue" removable>Selected</vi-chip>
+
+    <vi-chip color="brand" removable>Remove</vi-chip>
   </div>
 </template>

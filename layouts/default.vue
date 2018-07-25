@@ -2,33 +2,33 @@
   <div>
     <div class="topbar">Yolo</div>
     <div class="sidebar">
-      <nuxt-link tag="li" to="/avatar"><vi-item selectable>Avatar</vi-item></nuxt-link>
-      <nuxt-link tag="li" to="/button"><vi-item selectable>Button</vi-item></nuxt-link>
-      <nuxt-link tag="li" to="/checkbox"><vi-item selectable>Checkbox</vi-item></nuxt-link>
-      <nuxt-link tag="li" to="/chip"><vi-item selectable>Chip</vi-item></nuxt-link>
-      <nuxt-link tag="li" to="/data-table"><vi-item selectable>Datatable</vi-item></nuxt-link>
-      <nuxt-link tag="li" to="/date-picker"><vi-item selectable>Date Picker</vi-item></nuxt-link>
-      <nuxt-link tag="li" to="/dialog"><vi-item selectable>Dialog</vi-item></nuxt-link>
-      <nuxt-link tag="li" to="/drawer"><vi-item selectable>Drawer</vi-item></nuxt-link>
-      <nuxt-link tag="li" to="/expansion-panel"><vi-item selectable>Expansion Panel</vi-item></nuxt-link>
-      <nuxt-link tag="li" to="/grid"><vi-item selectable>Grid</vi-item></nuxt-link>
-      <nuxt-link tag="li" to="/icon"><vi-item selectable>Icon</vi-item></nuxt-link>
-      <nuxt-link tag="li" to="/input"><vi-item selectable>Input</vi-item></nuxt-link>
-      <nuxt-link tag="li" to="/item"><vi-item selectable>Item</vi-item></nuxt-link>
-      <nuxt-link tag="li" to="/menu"><vi-item selectable>Menu</vi-item></nuxt-link>
-      <nuxt-link tag="li" to="/message"><vi-item selectable>Message</vi-item></nuxt-link>
-      <nuxt-link tag="li" to="/message-box"><vi-item selectable>MessageBox</vi-item></nuxt-link>
-      <nuxt-link tag="li" to="/no-data"><vi-item selectable>No Data</vi-item></nuxt-link>
-      <nuxt-link tag="li" to="/tooltip"><vi-item selectable>Tooltip</vi-item></nuxt-link>
-      <nuxt-link tag="li" to="/section-header"><vi-item selectable>Section header</vi-item></nuxt-link>
-      <nuxt-link tag="li" to="/select"><vi-item selectable>Select</vi-item></nuxt-link>
-      <nuxt-link tag="li" to="/sticky"><vi-item selectable>Sticky</vi-item></nuxt-link>
-      <nuxt-link tag="li" to="/switch"><vi-item selectable>Switch</vi-item></nuxt-link>
-      <nuxt-link tag="li" to="/sidebar"><vi-item selectable>Sidebar</vi-item></nuxt-link>
-      <nuxt-link tag="li" to="/spinner"><vi-item selectable>Spinner</vi-item></nuxt-link>
-      <nuxt-link tag="li" to="/tabs"><vi-item selectable>Tabs</vi-item></nuxt-link>
-      <nuxt-link tag="li" to="/preview"><vi-item selectable>Preview</vi-item></nuxt-link>
-      <nuxt-link tag="li" to="/loading-dots"><vi-item selectable>Loading Dots</vi-item></nuxt-link>
+      <nuxt-link tag="li" to="/avatar"><vi-item link="true">Avatar</vi-item></nuxt-link>
+      <nuxt-link tag="li" to="/button"><vi-item link="true">Button</vi-item></nuxt-link>
+      <nuxt-link tag="li" to="/checkbox"><vi-item link="true">Checkbox</vi-item></nuxt-link>
+      <nuxt-link tag="li" to="/chip"><vi-item link="true">Chip</vi-item></nuxt-link>
+      <nuxt-link tag="li" to="/data-table"><vi-item link="true">Datatable</vi-item></nuxt-link>
+      <nuxt-link tag="li" to="/date-picker"><vi-item link="true">Date Picker</vi-item></nuxt-link>
+      <nuxt-link tag="li" to="/dialog"><vi-item link="true">Dialog</vi-item></nuxt-link>
+      <nuxt-link tag="li" to="/drawer"><vi-item link="true">Drawer</vi-item></nuxt-link>
+      <nuxt-link tag="li" to="/expansion-panel"><vi-item link="true">Expansion Panel</vi-item></nuxt-link>
+      <nuxt-link tag="li" to="/grid"><vi-item link="true">Grid</vi-item></nuxt-link>
+      <nuxt-link tag="li" to="/icon"><vi-item link="true">Icon</vi-item></nuxt-link>
+      <nuxt-link tag="li" to="/input"><vi-item link="true">Input</vi-item></nuxt-link>
+      <nuxt-link tag="li" to="/item"><vi-item link="true">Item</vi-item></nuxt-link>
+      <nuxt-link tag="li" to="/menu"><vi-item link="true">Menu</vi-item></nuxt-link>
+      <nuxt-link tag="li" to="/message"><vi-item link="true">Message</vi-item></nuxt-link>
+      <nuxt-link tag="li" to="/message-box"><vi-item link="true">MessageBox</vi-item></nuxt-link>
+      <nuxt-link tag="li" to="/no-data"><vi-item link="true">No Data</vi-item></nuxt-link>
+      <nuxt-link tag="li" to="/tooltip"><vi-item link="true">Tooltip</vi-item></nuxt-link>
+      <nuxt-link tag="li" to="/section-header"><vi-item link="true">Section header</vi-item></nuxt-link>
+      <nuxt-link tag="li" to="/select"><vi-item link="true">Select</vi-item></nuxt-link>
+      <nuxt-link tag="li" to="/sticky"><vi-item link="true">Sticky</vi-item></nuxt-link>
+      <nuxt-link tag="li" to="/switch"><vi-item link="true">Switch</vi-item></nuxt-link>
+      <nuxt-link tag="li" to="/sidebar"><vi-item link="true">Sidebar</vi-item></nuxt-link>
+      <nuxt-link tag="li" to="/spinner"><vi-item link="true">Spinner</vi-item></nuxt-link>
+      <nuxt-link tag="li" to="/tabs"><vi-item link="true">Tabs</vi-item></nuxt-link>
+      <nuxt-link tag="li" to="/preview"><vi-item link="true">Preview</vi-item></nuxt-link>
+      <nuxt-link tag="li" to="/loading-dots"><vi-item link="true">Loading Dots</vi-item></nuxt-link>
     </div>
     <main style="margin-top: 60px">
       <nuxt/>
@@ -41,7 +41,7 @@
 <style lang="stylus">
   @import '../assets/stylus/main.styl'
   body
-    background $bg-color
+    background #f9f9f9
 
   .topbar
     background #f1bc1a
@@ -55,6 +55,7 @@
     left 0
     top 0
     right 0
+    z-index: 2;
 
   .sidebar
     position: fixed;
@@ -69,6 +70,9 @@
     top: 50px;
     margin-left: 200px;
     padding 20px
+
+  .ex-row
+    display flex
 
   .ex-row > *:not(:first-child)
     margin-left 20px

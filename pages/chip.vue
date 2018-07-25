@@ -18,19 +18,57 @@
             { title: 'Outline', file: 'chip/outline', desc: `Combining an avatar with other components allows you to build beautiful user interfaces right out of the box.` },
             { title: 'Text', file: 'chip/text', desc: `Combining an avatar with other components allows you to build beautiful user interfaces right out of the box.` },
             { title: 'Size', file: 'chip/size', desc: `Combining an avatar with other components allows you to build beautiful user interfaces right out of the box.` },
+            { title: 'Error', file: 'chip/error', desc: `Combining an avatar with other components allows you to build beautiful user interfaces right out of the box.` },
+            { title: 'Prepend', file: 'chip/prepend', desc: `Combining an avatar with other components allows you to build beautiful user interfaces right out of the box.` },
           ],
           props: [
             [
-              'border',
-              'Give the avatar a border, you can control how thick by giving a number',
-              'String',
-              'true'
+              'removable',
+              'Add a close button',
+              'boolean',
+              'false'
             ],
             [
-              'size',
-              'Controls the height and width of a child <code>img</code> or <code>v-icon</code>',
+              'prepend',
+              'Prepend another text to the label',
+              'string',
+              '-'
+            ],
+            [
+              'small',
+              'Smaller label',
+              'Boolean',
+              'false'
+            ],
+            [
+              'large',
+              'Larger label',
+              'Boolean',
+              'false'
+            ],
+            [
+              'outline',
+              'Outline style',
+              'Boolean',
+              'false'
+            ],
+            [
+              'text',
+              'text only label - remove padding, border and background',
+              'Boolean',
+              'false'
+            ],
+            [
+              'color',
+              'fill in the label background with color',
               'String',
-              '48px'
+              '-'
+            ],
+            [
+              'error',
+              'Highlight the label with error border',
+              'Boolean',
+              'false'
             ]
           ],
           slots: {
