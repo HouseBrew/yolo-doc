@@ -15,7 +15,7 @@
           examples: [
             { title: 'Usage', file: 'input/index', desc: `The avatar has a dynamic size that can be scaled for any situation. A <strong>tile</strong> variation is available for displaying an avatar without border radius.` },
             { title: 'State', file: 'input/state', desc: `Combining an avatar with other components allows you to build beautiful user interfaces right out of the box.` },
-            { title: 'Darker/Line', file: 'input/style', desc: `Combining an avatar with other components allows you to build beautiful user interfaces right out of the box.` },
+            { title: 'Darker', file: 'input/darker', desc: `Combining an avatar with other components allows you to build beautiful user interfaces right out of the box.` },
             { title: 'Icon', file: 'input/icon', desc: `Combining an avatar with other components allows you to build beautiful user interfaces right out of the box.` },
             { title: 'Clearble', file: 'input/clear', desc: `Combining an avatar with other components allows you to build beautiful user interfaces right out of the box.` },
           ],

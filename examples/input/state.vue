@@ -1,16 +1,20 @@
 <template>
-  <div>
-    <h4>Disabled</h4>
-    <vi-input :line="line" :disabled="true" value="This is disabled" prefix-icon="question-circular"/>
-    <vi-input-error :requirements="requirements"/>
-
-    <h4>Readonly</h4>
-    <vi-input :line="line" readonly value="This is read only"/>
-
-    <h4>Clickable</h4>
-    <vi-input :line="line" clickable placeholder="Enter some text here"/>
-
-    <h4>Error</h4>
-    <vi-input :line="line" :error="true" placeholder="Enter some text here"/>
-  </div>
+  <vi-row wrap>
+    <vi-col xs6>
+      <p>Disabled</p>
+      <vi-input :line="line" :disabled="true" value="This is disabled" prefix-icon="question-circular"/>
+    </vi-col>
+    <vi-col xs6>
+      <p>Readonly</p>
+      <vi-input :line="line" readonly value="This is read only"/>
+    </vi-col>
+    <vi-col xs6>
+      <p>Clickable</p>
+      <vi-input :line="line" clickable placeholder="Enter some text here"/>
+    </vi-col>
+    <vi-col xs6>
+      <p>Error</p>
+      <vi-input :line="line" :error="true" placeholder="Enter some text here"/>
+    </vi-col>
+  </vi-row>
 </template>

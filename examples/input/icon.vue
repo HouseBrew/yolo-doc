@@ -1,9 +1,33 @@
 <template>
   <div>
-    <h4>Prepend icon</h4>
-    <vi-input :line="line" prefix-icon="question-circular" placeholder="Enter some text here"/>
+    <vi-row>
+      <vi-col xs6>
+        <vi-input prefix-icon="question-circular" placeholder="Enter some text here"/>
+        <vi-input placeholder="Enter some text here" class="mt-16">
+          <vi-button lowercase slot="prepend">Verify Email</vi-button>
+        </vi-input>
+      </vi-col>
+      <vi-col xs6>
+        <vi-input suffix-icon="question-circular" placeholder="Enter some text here"/>
+        <vi-input placeholder="Enter some text here" class="mt-16">
+          <vi-button text color="brand" lowercase slot="append">Verify Email</vi-button>
+        </vi-input>
+      </vi-col>
+    </vi-row>
 
-    <h4>Append icon</h4>
-    <vi-input :line="line" suffix-icon="question-circular" placeholder="Enter some text here"/>
+    <vi-row>
+      <vi-col xs6>
+        <vi-input line prefix-icon="question-circular" placeholder="Enter some text here"/>
+        <vi-input line placeholder="Enter some text here" class="mt-16">
+          <vi-button color="brand" lowercase slot="prepend">Verify Email</vi-button>
+        </vi-input>
+      </vi-col>
+      <vi-col xs6>
+        <vi-input line suffix-icon="question-circular" placeholder="Enter some text here"/>
+        <vi-input line placeholder="Enter some text here" class="mt-16">
+          <vi-button text color="brand" lowercase slot="append">Verify Email</vi-button>
+        </vi-input>
+      </vi-col>
+    </vi-row>
   </div>
 </template>

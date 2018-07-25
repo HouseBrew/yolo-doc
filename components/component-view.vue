@@ -1,7 +1,7 @@
 <template lang="pug">
   div
     h1 {{doc.title}}
-    p(v-html="doc.desc")
+    p.desc(v-html="doc.desc")
     table
       thead
         tr
@@ -38,7 +38,7 @@
     margin-bottom 16px
     font-size 44px
 
-  p
+  .desc
     font-size 16px
     margin-bottom 20px
 
