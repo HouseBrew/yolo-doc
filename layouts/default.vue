@@ -70,4 +70,6 @@
     margin-left: 200px;
     padding 20px
 
+  .ex-row > *:not(:first-child)
+    margin-left 20px
 </style>
