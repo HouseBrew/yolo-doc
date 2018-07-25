@@ -21,16 +21,112 @@
           ],
           props: [
             [
-              'border',
-              'Give the avatar a border, you can control how thick by giving a number',
+              'value',
+              'v-model',
               'String',
               'true'
             ],
             [
-              'size',
-              'Controls the height and width of a child <code>img</code> or <code>v-icon</code>',
+              'type',
+              'input or textarea',
               'String',
-              '48px'
+              'input'
+            ],
+            [
+              'placeholder',
+              'native',
+              'String',
+              '-'
+            ],
+            [
+              'name',
+              'native',
+              'String',
+              '-'
+            ],
+            [
+              'id',
+              'native',
+              'String',
+              '-'
+            ],
+            [
+              'disabled',
+              'disabled the input',
+              'Boolean',
+              'false'
+            ],
+            [
+              'error',
+              'red border',
+              'Boolean',
+              ''
+            ],
+            [
+              'readonly',
+              'native',
+              'Boolean',
+              'false'
+            ],
+            [
+              'clickable',
+              'When you want the input to be readonly and also clickable with cursor showing a hand',
+              'Boolean',
+              'false'
+            ],
+            [
+              'clearable',
+              'shows the clear button when there are inputs',
+              'Boolean',
+              'false'
+            ],
+            [
+              'prefix-icon',
+              'prefix an icon',
+              'string',
+              '-'
+            ],
+            [
+              'prefix-icon-size',
+              'change the size of prefix icon',
+              'Number',
+              '-'
+            ],
+            [
+              'suffix-icon',
+              'suffix icon',
+              'string',
+              '-'
+            ],
+            [
+              'suffix-icon-size',
+              'change the size of suffix icon',
+              'Number',
+              '-'
+            ],
+            [
+              'line',
+              'change the default box style to line style',
+              'Boolean',
+              'false'
+            ],
+            [
+              'no-resize',
+              'for textarea disable the resize',
+              'Boolean',
+              'false'
+            ],
+            [
+              'max-length',
+              'native',
+              'Number',
+              '-'
+            ],
+            [
+              'darker',
+              'darker border style to make the input standout',
+              'Boolean',
+              'false'
             ]
           ],
           slots: {
