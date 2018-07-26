@@ -70,6 +70,10 @@
     border 1px solid #e1e1e1
     background white
 
+    p
+      font-size 12px
+      padding-bottom 8px
+
   .code-section
     margin-top 20px
     background white
