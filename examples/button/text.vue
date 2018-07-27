@@ -4,7 +4,7 @@
       <vi-col xs4>
         <p>Default text button</p>
         <vi-button text>
-          Text
+          Default
         </vi-button>
         <vi-button icon text>
           <vi-icon name="share"/>
@@ -13,7 +13,16 @@
       <vi-col xs4>
         <p>Secondary text button</p>
         <vi-button text="secondary">
-          Text
+          Secondary
+        </vi-button>
+        <vi-button icon text="secondary">
+          <vi-icon name="share"/>
+        </vi-button>
+      </vi-col>
+      <vi-col xs4>
+        <p>Tertiary text button</p>
+        <vi-button text="tertiary">
+          Tertiary
         </vi-button>
         <vi-button icon text="secondary">
           <vi-icon name="share"/>
